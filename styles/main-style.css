@@ -1,0 +1,209 @@
+/* The width of the main container is 960px
+The main dark bluish/gray color is #293f50
+The greenish text color is #648880
+The linear gradient is linear-gradient(to right, #a1d3b0, #f6f1d3) */
+
+/* This covers styles for elements that are found on every page */
+/* GENERAL ATTRIBUTES */
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Make sure to wrap content in the coloured background box, then a content-box */
+
+.background-box-blue {
+  width: 100%;
+  background: #293f50;
+}
+
+.background-box-white {
+  width: 100%;
+  background: white;
+}
+
+.background-box-gradient {
+  width: 100%;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+
+.content-box {
+  max-width: 960px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+}
+
+h1 {
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+h2 {
+  color: grey;
+  font-weight: 300;
+}
+
+h3 {
+  color: #648880;
+  font-weight: 100;
+  line-height: 35px;
+}
+
+h5 {
+  color: lightgrey;
+  text-transform: uppercase;
+  font-weight: 300px;
+}
+
+p {
+  font-weight: 300;
+  color: #648880;
+}
+
+nav a:active, .footer a:active {
+  color: #648880;
+  text-decoration: underline;
+}
+
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  text-transform: uppercase;
+  border-top: 3px solid #648880;
+  padding: 20px 0px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  width: 100px;
+  font-size: xx-large;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+li {
+  color: #648880;
+  padding: 0px 5px;
+}
+
+nav li {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+/* FOOTER */
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+  margin-top: 40px;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+span {
+  color: #648880;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 970px) {
+  /* NAV */
+  nav {
+    padding: 0px 10px;
+  }
+
+  /* BANNER */
+  div .banner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+  /* NAV */
+  nav {
+    flex-wrap: wrap;
+    padding: unset;
+  }
+
+  .name {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .right {
+    text-align: center;
+    margin: auto;
+  }
+
+  .right ul {
+    padding: 0;
+  }
+
+  /* BANNER */
+  div .banner {
+    padding: 10px 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer span {
+    display: block;
+    margin: auto;
+    padding-bottom: 2px;
+  }
+
+  .footer ul {
+    margin: auto;
+    padding: 0;
+  }
+}

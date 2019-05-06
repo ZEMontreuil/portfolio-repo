@@ -1,0 +1,272 @@
+/* This covers styles for elements unique pages other than Index
+Make sure to use specific classes for each!*/
+
+/* INDEX */
+.header {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.contact-button {
+  color: white;
+  background: #293f50;
+  text-transform: uppercase;
+  padding: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background: white;
+  color: #293f50;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background-color: white;
+  color: #648880;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio h3 {
+  font-weight: 300;
+}
+
+.portfolio p {
+  padding-right: 10px;
+}
+
+img {
+  border-radius: 10px;
+  width: 275px;
+}
+
+.image {
+  width: 320px;
+}
+
+/* ABOUT US */
+.banner {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.banner h1 {
+  color: #648880;
+}
+
+.banner h3 {
+  font-weight: 300;
+}
+
+.about-main h2 {
+  margin-top: 50px;
+}
+
+/* STAFF */
+.staff-item {
+  margin-top: 50px;
+}
+
+.staff-item h2, h5 {
+  margin: 8px 0px 8
+  px 0px;
+}
+
+.staff-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.staff-text {
+  max-width: 675px;
+}
+
+.staff-text p {
+  margin: 0px 10px 10px 0px;
+}
+
+.staff-card {
+  flex-shrink: 0;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 90px 20px 20px 20px;
+  margin-left: 15px;
+}
+
+.staff-card p {
+  margin: 5px 0px;
+}
+
+.staff-card img {
+  height: 125px;
+  width: 125px;
+  position: absolute;
+  bottom: 100px;
+  right: 87px;
+  border-radius: 100px;
+}
+
+/* CONTACT US */
+
+.contact-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-body h3 {
+  font-weight: 300;
+  color: grey;
+  margin-bottom: 0;
+}
+
+.contact-body h5 {
+  margin-top: 5px;
+}
+
+.contact-body button {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background: #648880;
+  color: white;
+  width: 100px;
+}
+
+.contact-body button:hover {
+  background: white;
+  color: #648880
+}
+
+form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.form-item p {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.form-item textarea {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.contact-list {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list li {
+  color: grey;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 970px) {
+
+  /* STAFF */
+  .staff-body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .staff-card {
+    order: 0;
+    margin: 40px 0 20px 0;
+  }
+
+  .staff-text {
+    order: 1;
+    padding: 0px 5px;
+  }
+
+  .staff-item h2, h5 {
+    display: none;
+  }
+
+  /* CONTACT */
+
+  .contact-body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-body .left-side {
+    padding: 0px 30px;
+  }
+
+  .contact-body form {
+    width: unset;
+  }
+
+  .contact-body input, .contact-body textarea {
+    width: 250px;
+  }
+
+  /* ABOUT US */
+
+  .about-main {
+    padding: 0px 10px;
+  }
+}
+
+/* INDEX */
+
+div .header {
+  padding: 10px 10px;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+  /* INDEX */
+  .portfolio {
+    text-align: center;
+  }
+
+  .header {
+    padding: 10px 10px;
+
+  }
+
+  /* ABOUT */
+  .about-main {
+    padding: 0px 10px;
+  }
+
+  .about-main h2 {
+    margin-top: 10px;
+  }
+
+  /* STAFF */
+  .staff-text { 
+    padding: 0px 10px;
+  }
+
+}
